@@ -22,9 +22,10 @@ export default function SideNavigation() {
               smooth={true}
               duration={500}
               offset={-100}
-              className="  rounded-lg block  group cursor-pointer "
+              activeClass="bg-secondary text-primary"
+              className="  rounded-lg block hover:scale-105  group cursor-pointer text-white bg-primary transition-all duration-300"
             >
-              <div className=" flex flex-wrap w-[7rem] text-white hover:text-base  duration-300  whitespace-nowrap bg-primary px-2 py-1 rounded shadow-md text-sm  group-hover:opacity-100 transition-all">
+              <div className=" flex flex-wrap w-[7rem]    duration-300  whitespace-nowrap  px-2 py-1 rounded shadow-md text-sm  group-hover:opacity-100 transition-all">
                 {item.label}
               </div>
             </ScrollLink>
