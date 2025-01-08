@@ -55,7 +55,7 @@ import logoImg from "../assets/images/logo/logo1.png";
 // details
 export const companyDetails = {
   logo: logoImg,
-  phone: "+91-9948024777",
+  phone: "+91-9866525099",
   location:
     "8-2-269/S/88 & 8-2-2, SAGAR COORPERATIVE SOCIETY, HYDERABAD, TELANGANA",
   email: "abc@xyz.com",
