@@ -25,6 +25,7 @@ const Banner = ({ page }) => {
       className="min-h-screen w-full relative flex justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
+      <div className="bg-black/30 absolute top-0 left-0 w-full h-full" />
       <div className="wrapper pt-[10rem] pb-[5rem] flex flex-col-reverse lg:grid grid-cols-[60%_40%] items-center gap-5">
         <div className="flex flex-col gap-4 items-start justify-center">
           <p
@@ -36,14 +37,17 @@ const Banner = ({ page }) => {
           </p>
           <h1
             data-aos="fade-right"
-            className="text-[2.5rem] md:text-5xl font-bold leading-tight"
+            className="text-[2.5rem] md:text-5xl font-bold leading-tight text-white drop-shadow-2xl"
           >
             {page === "web-development" &&
-              "HAASA AI - Shaping the Future with Advanced AI Solutions"}
+              "HAASA AI - Empowering Businesses with Cutting-Edge AI and IT Solutions"}
             {page === "app-development" &&
-              "HAASA AI - Elevating Your Business with Cutting-Edge App Development"}
+              "HAASA AI - Empowering Innovation with Advanced AI and IT Solutions"}
           </h1>
-          <p data-aos="fade-right" className="text-sm text-gray-500">
+          <p
+            data-aos="fade-right"
+            className="text-base text-white drop-shadow-2xl"
+          >
             {page === "web-development" &&
               "Unlock the full potential of your online presence with our state-of-the-art web development services. At HAASA AI, we combine creativity, innovation, and the latest technologies to build custom web solutions that captivate users, boost engagement, and drive business growth. Whether you need a dynamic website, an interactive platform, or a robust e-commerce solution, we deliver tailored digital experiences designed for the future."}
             {page === "app-development" &&

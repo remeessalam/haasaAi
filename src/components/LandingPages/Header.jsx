@@ -5,6 +5,7 @@ import { Link as ReactScrollLink } from "react-scroll";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -28,18 +29,29 @@ const Header = () => {
         </ReactScrollLink>
         <div className="hidden md:flex items-center gap-10">
           {landingPageNavLinks.map((item) => (
-            <ReactScrollLink
-              spy={true}
-              smooth={true}
-              duration={1000}
-              offset={-70}
-              activeClass="active-item"
-              className="text-sm cursor-pointer text-gray-800 hover:text-primary transition-all duration-300"
-              key={item.id}
-              to={item.link}
-            >
-              {item.label}
-            </ReactScrollLink>
+            <>
+              {item.label !== "Home" ? (
+                <ReactScrollLink
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  offset={-70}
+                  activeClass="active-item"
+                  className="text-sm cursor-pointer text-gray-800 hover:text-primary transition-all duration-300"
+                  key={item.id}
+                  to={item.link}
+                >
+                  {item.label}
+                </ReactScrollLink>
+              ) : (
+                <Link
+                  to={"/"}
+                  className="text-sm cursor-pointer text-gray-800 hover:text-primary transition-all duration-300"
+                >
+                  {item.label}
+                </Link>
+              )}
+            </>
           ))}
         </div>
         <div
@@ -78,18 +90,29 @@ const Header = () => {
         </div>
         <div className="py-4 px-7 flex flex-col gap-4">
           {landingPageNavLinks.map(({ label, link, id }) => (
-            <ReactScrollLink
-              onClick={() => setIsOpen(false)}
-              key={id}
-              className="text-2xl font-mediumduration-300 link"
-              to={link}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-              {label}
-            </ReactScrollLink>
+            <>
+              {label !== "Home" ? (
+                <ReactScrollLink
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  offset={-70}
+                  activeClass="active-item"
+                  className="text-sm cursor-pointer text-gray-800 hover:text-primary transition-all duration-300"
+                  key={id}
+                  to={link}
+                >
+                  {label}
+                </ReactScrollLink>
+              ) : (
+                <Link
+                  to={"/"}
+                  className="text-sm cursor-pointer text-gray-800 hover:text-primary transition-all duration-300"
+                >
+                  {label}
+                </Link>
+              )}
+            </>
           ))}
         </div>
       </Drawer>
