@@ -28,7 +28,7 @@ html {
 
 @layer utilities {
   .wrapper {
-    @apply max-w-7xl mx-auto px-4 sm:px-6;
+    @apply max-w-6xl mx-auto px-4 sm:px-6;
   }
   .primary-btn {
     @apply bg-gradient-to-r text-center rounded-full px-5 text-sm font-medium py-3 from-primary to-[#515151] text-white hover:-translate-y-1 hover:shadow-xl hover:bg-gradient-to-r hover:from-primary hover:to-primary cursor-pointer transition-all duration-300;
@@ -48,7 +48,7 @@ html {
   .heading-2 {
     @apply text-[1.5rem] md:text-3xl font-medium leading-tight;
   }
-  .error-message{
+  .error-message {
     @apply text-red-700 text-sm h-4 mb-2;
   }
 }

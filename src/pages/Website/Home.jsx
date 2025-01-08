@@ -18,6 +18,7 @@ import whoWeAre from "../../assets/images/who-we-are.webp";
 import ServiceItemCard from "../../components/Website/ServiceItemCard";
 import { Link } from "react-router-dom";
 import WorkFlow from "../../components/WorkFlow";
+import SideNavigation from "../../components/SlideNavigation";
 
 // Lazy load components for better performance
 const Header = React.lazy(() => import("../../components/Website/Header"));
@@ -90,9 +91,11 @@ const Home = () => {
       </Helmet>
 
       <div className="landing-bg">
+        <SideNavigation />
         <Header />
-        <Banner />
-
+        <section>
+          <Banner />
+        </section>
         <main>
           <section
             id="services"
@@ -134,6 +137,7 @@ const Home = () => {
           </section>
 
           <section
+            id="industries"
             className="wrapper py-[2rem] flex flex-col gap-3"
             aria-label="Industries We Serve"
           >
@@ -173,64 +177,70 @@ const Home = () => {
                 </div>
               ))}
             </div>
-
-            <WorkFlow />
-
-            <section
-              className="wrapper pb-10 flex flex-col items-center gap-5 z-10"
-              aria-label="About Company"
-            >
-              <div data-aos="fade-up" className="flex items-center gap-3">
-                <LazyLoadImage
-                  src={line}
-                  alt="Decorative line"
-                  className="w-[3rem]"
-                />
-                <h2 className="font-medium text-secondary">About Company</h2>
-              </div>
-              <div className="grid md:grid-cols-2 gap-10 md:mb-[7rem]">
-                <div className="relative" data-aos="fade-right">
-                  <LazyLoadImage
-                    src={whoWeAre}
-                    width="500"
-                    height="400"
-                    alt="HAASA AI company overview"
-                    className="rounded-lg h-[20rem] md:h-full md:max-h-[25rem] w-full object-cover object-right"
-                  />
-                  <div className="w-full sm:w-fit sm:max-w-[18rem] text-white h-full sm:h-fit absolute md:-bottom-[5rem] bottom-0 left-0 bg-primary/70 sm:bg-primary p-5 rounded-lg">
-                    <h3 className="text-5xl font-bold text-white">2+</h3>
-                    <p className="font-medium mt-3 text-white">
-                      Years of Experience
-                    </p>
-                    <p className="pl-5 border-l-2 border-white text-md mt-3 text-white">
-                      The trusted choice for your software development solutions
-                    </p>
-                  </div>
-                </div>
-                <div data-aos="fade-right" className="flex flex-col gap-5">
-                  <h2 className="heading-2">
-                    Our Vision: Empowering Businesses to Adapt, Innovate, and
-                    Thrive Through Technology
-                  </h2>
-                  <p className="text-black">
-                    Our vision is to be the trusted partner that businesses turn
-                    to when they need to adapt, innovate, and excel. We believe
-                    that technology should not be a barrier but a catalyst for
-                    growth. Through our solutions, we aim to transform the way
-                    businesses operate, helping them stay competitive in an
-                    increasingly complex world.
-                  </p>
-                  <Link to="/about-us" className="primary-btn mt-7 w-fit">
-                    Know More About Us
-                  </Link>
-                </div>
-              </div>
-            </section>
           </section>
-
-          <Experience />
-          <Testimonials />
-          <LeadForm />
+          <section
+            id="about"
+            className="wrapper pb-10 flex flex-col items-center gap-5 z-10"
+            aria-label="About Company"
+          >
+            <div data-aos="fade-up" className="flex items-center gap-3">
+              <LazyLoadImage
+                src={line}
+                alt="Decorative line"
+                className="w-[3rem]"
+              />
+              <h2 className="font-medium text-secondary">About Company</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-10 md:mb-[7rem]">
+              <div className="relative" data-aos="fade-right">
+                <LazyLoadImage
+                  src={whoWeAre}
+                  width="500"
+                  height="400"
+                  alt="HAASA AI company overview"
+                  className="rounded-lg h-[20rem] md:h-full md:max-h-[25rem] w-full object-cover object-right"
+                />
+                <div className="w-full sm:w-fit sm:max-w-[18rem] text-white h-full sm:h-fit absolute md:-bottom-[5rem] bottom-0 left-0 bg-primary/70 sm:bg-primary p-5 rounded-lg">
+                  <h3 className="text-5xl font-bold text-white">2+</h3>
+                  <p className="font-medium mt-3 text-white">
+                    Years of Experience
+                  </p>
+                  <p className="pl-5 border-l-2 border-white text-md mt-3 text-white">
+                    The trusted choice for your software development solutions
+                  </p>
+                </div>
+              </div>
+              <div data-aos="fade-right" className="flex flex-col gap-5">
+                <h2 className="heading-2">
+                  Our Vision: Empowering Businesses to Adapt, Innovate, and
+                  Thrive Through Technology
+                </h2>
+                <p className="text-black">
+                  Our vision is to be the trusted partner that businesses turn
+                  to when they need to adapt, innovate, and excel. We believe
+                  that technology should not be a barrier but a catalyst for
+                  growth. Through our solutions, we aim to transform the way
+                  businesses operate, helping them stay competitive in an
+                  increasingly complex world.
+                </p>
+                <Link to="/about-us" className="primary-btn mt-7 w-fit">
+                  Know More About Us
+                </Link>
+              </div>
+            </div>
+          </section>
+          <section id="ourapproach">
+            <WorkFlow />
+          </section>
+          <section id="experience">
+            <Experience />
+          </section>
+          <section id="testimonials">
+            <Testimonials />
+          </section>
+          <section id="contact">
+            <LeadForm />
+          </section>
           <AssociatedWith />
         </main>
         <Footer />
