@@ -14,7 +14,7 @@ const Header = () => {
       <div className="flex wrapper items-center gap-8 justify-between">
         <ReactScrollLink
           to="banner"
-          className="cursor-pointer"
+          className="cursor-pointer p-5"
           spy={true}
           smooth={true}
           duration={500}
@@ -24,7 +24,7 @@ const Header = () => {
             alt="logo"
             width="auto"
             height="auto"
-            className="h-[5rem] md:h-[6.5rem] object-contain"
+            className="h-[3rem] md:h-[3.5rem] object-contain"
           />
         </ReactScrollLink>
         <div className="hidden md:flex items-center gap-10">
