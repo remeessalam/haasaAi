@@ -3,7 +3,7 @@ import Header from "../../components/Website/Header";
 import banner from "../../assets/images/about-us-page-banner.webp";
 import line from "../../assets/images/line.png";
 import img1 from "../../assets/images/about-us-page-2.png";
-import img2 from "../../assets/images/about-us-page-3.png";
+import img2 from "../../assets/images/about-us-page-3.jpg";
 import projectsImg from "../../assets/images/icons/projects.png";
 import clientsImg from "../../assets/images/icons/clients.png";
 import awardsImg from "../../assets/images/icons/awards.png";
@@ -39,15 +39,25 @@ const AboutUs = () => {
               </h6>
             </div>
             <h2 className="heading capitalize mt-5">
-              The world’s IT networking company.
+              Your Partner in Navigating the Digital Transformation Journey
             </h2>
-            <p className="mt-6">
-              At AI Company, we are passionate about pushing the boundaries of
-              technology to deliver world-class AI, blockchain, and machine
-              learning solutions to businesses around the globe. Our team is a
-              group of forward-thinking developers, data scientists, and
-              innovators committed to transforming industries with custom
-              AI-driven products and services.
+            <p className="mt-6 text-secondary">
+              At HAASA AI, we don’t just deliver technology solutions — we
+              become an integral part of your journey toward success. Our
+              mission is simple: to help businesses thrive in a rapidly evolving
+              digital world by providing innovative and tailored solutions. With
+              years of experience and a relentless drive to solve problems,
+              we’re committed to enabling businesses of all sizes to unlock
+              their full potential.
+              <br />
+              <br />
+              We understand that the digital landscape can be overwhelming.
+              That’s why we work hand-in-hand with you to understand your unique
+              challenges and goals. Through collaboration, creativity, and
+              cutting-edge technology, we create customized solutions that make
+              a real difference. Whether you’re a startup or an established
+              enterprise, our team is here to guide you every step of the way.
+              give a heading for this also
             </p>
           </div>
           <div className="h-full w-full">
@@ -70,7 +80,7 @@ const AboutUs = () => {
           alt="experience"
           width="800"
           height="600"
-          className="w-full h-[80vh] lg:block hidden object-contain z-10 grayscale-[20%]"
+          className="w-full h-[80vh] lg:block hidden object-cover z-10 grayscale-[20%]"
         />
         <div
           data-aos="fade-left"
@@ -89,7 +99,7 @@ const AboutUs = () => {
             width="400"
             height="300"
             alt="experience"
-            className="w-full max-w-[20rem] block lg:hidden object-contain mx-auto object-right z-10"
+            className="w-full max-w-[30rem] block lg:hidden object-cover mx-auto object-right z-10"
           />
           <div className="z-10 bg-[#010C2A] w-full p-5 grid md:grid-cols-3 gap-5 lg:w-[70vw] lg:-translate-x-[30vw]">
             <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5">
@@ -159,9 +169,13 @@ const AboutUs = () => {
                 width="100"
                 height="100"
               />
-              <h5 className="text-xl font-semibold">Goal Setting</h5>
+              <h5 className="text-xl font-semibold">
+                Discovery & Consultation
+              </h5>
               <p className="px-6 text-sm">
-                We define clear goals to align with your vision and needs.
+                We start by gaining a deep understanding of your business,
+                challenges, and goals, ensuring we provide the most effective
+                solution.
               </p>
               <img
                 loading="lazy"
@@ -179,9 +193,10 @@ const AboutUs = () => {
                 width="100"
                 height="100"
               />
-              <h5 className="text-xl font-semibold">Select Service</h5>
+              <h5 className="text-xl font-semibold">Planning & Strategy</h5>
               <p className="px-6 text-sm">
-                Choose the right solution tailored to your requirements.
+                After understanding your needs, we develop a detailed strategy,
+                including timelines, budgets, and deliverables.
               </p>
               <img
                 loading="lazy"
@@ -199,9 +214,57 @@ const AboutUs = () => {
                 width="100"
                 height="100"
               />
-              <h5 className="text-xl font-semibold">Solve Problem</h5>
+              <h5 className="text-xl font-semibold">Design & Development</h5>
               <p className="px-6 text-sm">
-                We deliver smart solutions to overcome any challenges.
+                We get to work on crafting a solution that meets your
+                requirements, with regular feedback loops to ensure alignment
+                with your vision.
+              </p>
+              <img
+                loading="lazy"
+                src={arrow}
+                className="h-[5rem] flex lg:hidden sm:h-[6rem] object-contain absolute right-[-2rem] sm:right-[-3.5rem] rotate-[100deg] lg:rotate-12 bottom-[-3.5rem] lg:top-0"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid lg:grid-cols-2 mt-10 gap-6 lg:gap-10">
+            <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
+              <img
+                loading="lazy"
+                src={process1}
+                className="w-[3rem] sm:w-[5rem] object-contain"
+                alt="process"
+                width="100"
+                height="100"
+              />
+              <h5 className="text-xl font-semibold">
+                Testing & Quality Assurance
+              </h5>
+              <p className="px-6 text-sm">
+                Rigorous testing ensures that our solutions are of the highest
+                quality, thoroughly vetted, and optimized for success.
+              </p>
+              <img
+                loading="lazy"
+                src={arrow}
+                className="h-[5rem] sm:h-[6rem] object-contain absolute left-[-2rem] sm:left-[-3.5rem] lg:left-auto lg:right-[-3.5rem] rotate-[80deg] lg:-rotate-12 scale-y-[-1] bottom-[-3.5rem] sm:bottom-0"
+                alt=""
+              />
+            </div>
+            <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
+              <img
+                loading="lazy"
+                src={process2}
+                className="w-[3rem] sm:w-[5rem] object-contain"
+                alt="process"
+                width="100"
+                height="100"
+              />
+              <h5 className="text-xl font-semibold">Deployment & Support</h5>
+              <p className="px-6 text-sm">
+                We ensure a smooth deployment and provide ongoing support to
+                keep your solutions running efficiently and effectively.
               </p>
             </div>
           </div>
@@ -210,20 +273,18 @@ const AboutUs = () => {
 
       <section className="wrapper text-center">
         <h1 className="heading mb-6">Who We Are</h1>
-        <p>
-          Founded with the mission to drive digital transformation, AI Company
-          specializes in providing cutting-edge AI, blockchain, and ML services
-          across a wide range of sectors including energy, healthcare,
-          e-commerce, real estate, and more. Our solutions are tailored to the
-          unique needs of each client, ensuring the perfect blend of innovation
-          and practicality.
+        <p className="text-secondary">
+          At HAASA AI, we are more than just a service provider – we are your
+          trusted technology partner. Our expert team is committed to delivering
+          innovative, customized solutions that address your unique business
+          challenges. Whether you’re aiming to streamline processes, enhance
+          customer experiences, or leverage new technologies, we’re here to help
+          you succeed in a rapidly evolving digital world. Get in touch with us
+          today to explore how we can help your business innovate, grow, and
+          thrive.
           <br />
           <br />
-          With a strong focus on empowering businesses, we offer a comprehensive
-          suite of services that includes cloud computing, data analytics,
-          cybersecurity, and advanced software development. We pride ourselves
-          on delivering intelligent, scalable, and secure solutions that help
-          our clients unlock new opportunities and achieve sustainable growth.
+          HAASA AI – Paving the Way for Tomorrow’s Success, Today.
         </p>
       </section>
       <SolveITNeeds />

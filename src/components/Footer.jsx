@@ -19,25 +19,25 @@ const Footer = () => {
       className="border-t-2 py-[2rem] bg-cover bg-top"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="wrapper grid grid-cols-1 md:grid-cols-4 lg:grid-cols-[50%_20%_30%] gap-6">
+      <div className="wrapper grid grid-cols-1 md:grid-cols-4 lg:grid-cols-[50%_50%] gap-6">
         <div className="w-fit md:col-span-4 lg:col-span-1 md:place-self-center lg:place-self-auto">
           <img src={logo} alt="logo" className="w-[10rem] object-contain" />
         </div>
-        <div className="md:col-span-2 lg:col-span-1 flex flex-col gap-4">
+        {/* <div className="md:col-span-2 lg:col-span-1 flex flex-col gap-4">
           <h6 className="text-lg font-medium">Our Services</h6>
           <div className="flex text-md">
             <ul className="flex flex-col gap-2">
-              {allServices.map(({ id, title, link }) => (
+              {allServices.map(({ id, category, link }) => (
                 <Link to={link} key={id}>
-                  {title}
+                  {category}
                 </Link>
               ))}
             </ul>
           </div>
-        </div>
-        <div className="md:col-span-2 lg:col-span-1 flex flex-col gap-4">
-          <h6 className="text-lg font-medium">Contact Info</h6>
+        </div> */}
+        <div className="md:col-span-2 lg:col-span-1 flex flex-col lg:items-end gap-4">
           <div className="flex flex-col gap-5">
+            <h6 className="text-lg font-medium text-start">Contact Info</h6>
             <ul className="flex flex-col gap-6 text-md">
               <li className="flex gap-2 items-center">
                 <img

@@ -78,7 +78,10 @@ const InquiryForm = () => {
             <h2 data-aos="fade-up" className="heading-2 capitalize">
               Let’s Collaborate to Innovate
             </h2>
-            <p data-aos="fade-up" className="max-w-[35rem] lg:max-w-max">
+            <p
+              data-aos="fade-up"
+              className="max-w-[35rem] lg:max-w-max text-secondary"
+            >
               At HAASA AI, we’re dedicated to providing technology solutions
               that transform businesses. Contact us today to discuss how our
               expertise can support your business goals.

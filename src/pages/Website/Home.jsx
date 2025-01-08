@@ -203,14 +203,16 @@ const Home = () => {
                 </div>
                 <div data-aos="fade-right" className="flex flex-col gap-5">
                   <h2 className="heading-2">
-                    Our Vision: Empowering Global Businesses with Intelligent
-                    Technology
+                    Our Vision: Empowering Businesses to Adapt, Innovate, and
+                    Thrive Through Technology
                   </h2>
                   <p>
-                    At HAASA AI, we are committed to delivering innovative AI,
-                    Machine Learning, and Blockchain solutions that help
-                    businesses adapt and excel in an increasingly complex and
-                    competitive marketplace.
+                    Our vision is to be the trusted partner that businesses turn
+                    to when they need to adapt, innovate, and excel. We believe
+                    that technology should not be a barrier but a catalyst for
+                    growth. Through our solutions, we aim to transform the way
+                    businesses operate, helping them stay competitive in an
+                    increasingly complex world.
                   </p>
                   <Link to="/about-us" className="primary-btn mt-7 w-fit">
                     Know More About Us

@@ -32,7 +32,8 @@ const ServicePageLayout = () => {
                     } flex items-center gap-2 justify-between p-3 rounded-md`}
                     to={item.link}
                   >
-                    {item.title} <PiCaretDoubleRightBold className="text-md" />
+                    {item.category}{" "}
+                    <PiCaretDoubleRightBold className="text-md" />
                   </Link>
                 ))}
               </div>

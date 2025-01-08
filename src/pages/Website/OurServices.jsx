@@ -39,9 +39,12 @@ const OurServices = () => {
             We provide the best services
           </h1>
           <p data-aos="fade-up" className="text-center max-w-2xl">
-            At AI Company, we offer a full range of advanced technology services
-            designed to empower businesses with scalable, intelligent, and
-            secure solutions.
+            At HAASA AI, we offer a wide array of tailored digital solutions to
+            help businesses unlock their full potential. Our team works with the
+            latest technologies and proven strategies to create solutions that
+            are not only effective but also scalable and future-ready. We strive
+            to empower businesses to grow, improve operational efficiency, and
+            stay ahead of the competition in an increasingly digital world.
           </p>
           <div
             data-aos="fade-up"

@@ -19,22 +19,40 @@ const BlogDetails = React.lazy(() => import("./pages/Website/BlogDetails"));
 const ServicePageLayout = React.lazy(() =>
   import("./components/Website/ServicePageLayout")
 );
+const DataAnalytics = React.lazy(() => import("./pages/Website/DataAnalytics"));
+const UIUXDevelopment = React.lazy(() =>
+  import("./pages/Website/UIUXDevelopment")
+);
+const ChatbotDevelopment = React.lazy(() =>
+  import("./pages/Website/ChatbotDevelopment")
+);
+const GameDevelopment = React.lazy(() =>
+  import("./pages/Website/GameDevelopment")
+);
+const MLDevelopment = React.lazy(() => import("./pages/Website/MLDevelopment"));
+const IOTdevelopment = React.lazy(() =>
+  import("./pages/Website/IOTdevelopment")
+);
 const AppDevelopment = React.lazy(() =>
   import("./pages/Website/AppDevelopment")
 );
 const WebDevelopment = React.lazy(() =>
   import("./pages/Website/WebDevelopment")
 );
-const AIAndMLDevelopment = React.lazy(() =>
-  import("./pages/Website/AIAndMLDevelopment")
-);
+const AIDevelopment = React.lazy(() => import("./pages/Website/AIDevelopment"));
 const BlockchainDevelopment = React.lazy(() =>
   import("./pages/Website/BlockchainDevelopment")
+);
+const AICallingDevelopment = React.lazy(() =>
+  import("./pages/Website/AICallingDevelopment")
 );
 const CloudComputing = React.lazy(() =>
   import("./pages/Website/CloudComputing")
 );
 const VRAndAR = React.lazy(() => import("./pages/Website/VRAndAR"));
+const ApplicationDevelopment = React.lazy(() =>
+  import("./pages/Website/ApplicationDevelopment")
+);
 const ContactUs = React.lazy(() => import("./pages/Website/ContactUs"));
 const LandingPage = React.lazy(() => import("./pages/LandingPage/LandingPage"));
 
@@ -72,12 +90,13 @@ function App() {
 
             {/* Services Detail Routes with Layout */}
             <Route path="/services" element={<ServicePageLayout />}>
+              <Route
+                path="data-analytics-business-intelligence"
+                element={<DataAnalytics />}
+              />
               <Route path="web-development" element={<WebDevelopment />} />
               <Route path="app-development" element={<AppDevelopment />} />
-              <Route
-                path="ai-ml-development"
-                element={<AIAndMLDevelopment />}
-              />
+              <Route path="ai-development" element={<AIDevelopment />} />
               <Route
                 path="blockchain-solutions"
                 element={<BlockchainDevelopment />}
@@ -87,6 +106,22 @@ function App() {
                 element={<CloudComputing />}
               />
               <Route path="vr-ar-development" element={<VRAndAR />} />
+              <Route
+                path="application-development"
+                element={<ApplicationDevelopment />}
+              />
+              <Route path="uiux-development" element={<UIUXDevelopment />} />
+              <Route path="iot-development" element={<IOTdevelopment />} />
+              <Route path="ml-development" element={<MLDevelopment />} />
+              <Route path="game-development" element={<GameDevelopment />} />
+              <Route
+                path="chatbot-development"
+                element={<ChatbotDevelopment />}
+              />
+              <Route
+                path="ai-calling-development"
+                element={<AICallingDevelopment />}
+              />
             </Route>
 
             {/* Landing Pages */}

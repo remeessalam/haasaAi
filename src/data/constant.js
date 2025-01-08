@@ -55,8 +55,9 @@ import logoImg from "../assets/images/logo/logo1.png";
 // details
 export const companyDetails = {
   logo: logoImg,
-  phone: "+00000000",
-  location: "ABC Street, City, Country",
+  phone: "+91-9948024777",
+  location:
+    "8-2-269/S/88 & 8-2-2, SAGAR COORPERATIVE SOCIETY, HYDERABAD, TELANGANA",
   email: "abc@xyz.com",
 };
 
@@ -107,7 +108,8 @@ export const websitePagesLinks = [
   },
   {
     id: 4,
-    link: "/blogs",
+    // link: "/blogs",
+    link: "#",
     label: "Blogs",
   },
   {
@@ -471,6 +473,9 @@ export const appPortfolio = [
 
 export const allServices = [
   {
+    icon: require("../assets/images/servicesimg/data.png"),
+    img: require("../assets/images/servicesimg/data.jpg"),
+    img2: require("../assets/images/servicesimg/data2.jpg"),
     category: "Data Analytics & Business Intelligence",
     description:
       "Data is a valuable asset, and at HAASA AI, we help you unlock its full potential. Our data analytics and business intelligence services are designed to turn your raw data into clear, actionable insights. Whether you're aiming to optimize business operations or gain deeper understanding of market trends, we provide the tools to make smarter, data-driven decisions. With our expertise, you can transform data into powerful strategies that fuel growth.",
@@ -482,8 +487,14 @@ export const allServices = [
       "Strategic Decision-Making Support",
       "Data Visualization & Reporting",
     ],
+    servicedescription:
+      "In the fast-paced world of modern business, data is one of the most valuable assets. Our Data Analytics and Business Intelligence services help you turn data into actionable insights that drive smarter decision-making. Using advanced analytical tools, we uncover trends, track key performance metrics, and deliver data-driven solutions that allow you to make informed choices that impact your bottom line. Whether it's through custom dashboards, predictive analytics, or visualizations, our goal is to transform your data into a powerful tool for strategic growth.",
+    link: "/services/data-analytics-business-intelligence",
   },
   {
+    icon: require("../assets/images/servicesimg/ai.png"),
+    img: require("../assets/images/servicesimg/ai.jpg"),
+    img2: require("../assets/images/servicesimg/ai2.jpg"),
     category: "Artificial Intelligence (AI)",
     description:
       "Artificial Intelligence is reshaping industries, and at HAASA AI, we are experts in implementing AI solutions that deliver tangible results. From automating processes to enhancing decision-making, our AI-driven services are designed to streamline your operations and improve overall efficiency. We work closely with your team to develop customized AI applications that cater to your specific business needs and goals.",
@@ -495,9 +506,14 @@ export const allServices = [
       "Personalized Customer Interactions",
       "Scalable AI Solutions",
     ],
-    link: "/services/ai-ml-development",
+    link: "/services/ai-development",
+    servicedescription:
+      "Artificial Intelligence is changing the way businesses operate by automating tasks, improving decision-making, and delivering personalized customer experiences. Our AI solutions are designed to address your specific needs, whether you're looking to automate processes, predict trends, or enhance customer service. We specialize in building intelligent systems, including machine learning models, natural language processing (NLP) applications, and robotic process automation (RPA), to help businesses improve productivity and gain a competitive edge.",
   },
   {
+    icon: require("../assets/images/servicesimg/app.png"),
+    img: require("../assets/images/servicesimg/app.jpg"),
+    img2: require("../assets/images/servicesimg/app2.jpg"),
     category: "Mobile App Development (iOS & Android)",
     description:
       "In a mobile-first world, having an app that engages your audience is essential. At HAASA AI, we specialize in developing high-quality, performance-driven mobile applications for both iOS and Android platforms. Our approach focuses on delivering seamless user experiences, intuitive interfaces, and fast, responsive apps that perform exceptionally well, no matter the device.",
@@ -510,8 +526,13 @@ export const allServices = [
       "Scalable & Secure Mobile Applications",
     ],
     link: "/services/app-development",
+    servicedescription:
+      "Mobile apps have become essential for businesses to connect with customers in meaningful ways. Our mobile app development services cater to both iOS and Android platforms, creating apps that are not only visually appealing but also user-friendly, secure, and highly functional. Whether you're looking to build a new app or enhance an existing one, we ensure that it delivers seamless performance, is scalable, and aligns with your business goals. From e-commerce apps to enterprise solutions, we bring your ideas to life with precision and quality.",
   },
   {
+    icon: require("../assets/images/servicesimg/application.png"),
+    img: require("../assets/images/servicesimg/application.jpg"),
+    img2: require("../assets/images/servicesimg/application2.jpg"),
     category: "Application Development",
     description:
       "From small-scale applications to enterprise-level systems, we develop solutions that align with your business goals. At HAASA AI, our focus is on building reliable, secure, and scalable applications tailored specifically to your needs. Whether it's improving internal processes or creating customer-facing apps, we ensure every application is built with performance and usability in mind.",
@@ -523,8 +544,14 @@ export const allServices = [
       "Agile Development Methodologies",
       "Continuous Support & Maintenance",
     ],
+    link: "/services/application-development",
+    servicedescription:
+      "Every business is unique, and so are its application needs. Our application development services are designed to build customized, secure, and scalable software solutions that meet your business's specific requirements. From enterprise software to internal tools and client-facing applications, we offer end-to-end development services. Our team ensures that every application is optimized for performance, easy to use, and capable of supporting your business’s ongoing needs, both now and in the future.",
   },
   {
+    icon: require("../assets/images/servicesimg/web.png"),
+    img: require("../assets/images/servicesimg/web.jpg"),
+    img2: require("../assets/images/servicesimg/web2.jpg"),
     category: "Web Development (Full Stack)",
     description:
       "Your website is often the first point of contact with customers, and we ensure it leaves a lasting impression. At HAASA AI, we provide full-stack web development services, delivering everything from stunning front-end designs to robust back-end systems. We use the latest technologies to create websites that are not only visually appealing but also functional, secure, and scalable.",
@@ -537,8 +564,13 @@ export const allServices = [
       "Secure & High-Performance Websites",
     ],
     link: "/services/web-development",
+    servicedescription:
+      "A strong online presence is critical for businesses looking to succeed. Our Full Stack Web Development services provide you with comprehensive solutions, covering everything from the front-end design to back-end architecture. We build dynamic, responsive websites that look great and work seamlessly across all devices. Whether you're launching an e-commerce platform, a corporate website, or a complex web application, we use the latest technologies and frameworks to ensure your site performs at its best and delivers a positive user experience.",
   },
   {
+    icon: require("../assets/images/servicesimg/uiux.png"),
+    img: require("../assets/images/servicesimg/uiux.jpg"),
+    img2: require("../assets/images/servicesimg/uiux2.jpg"),
     category: "UI/UX Design",
     description:
       "Great design is more than just aesthetics – it’s about creating intuitive, engaging experiences that delight users. Our UI/UX design team focuses on crafting seamless user interfaces and experiences that help your audience connect with your brand. From concept to execution, we ensure that your users have an effortless, enjoyable interaction with your products or services.",
@@ -550,8 +582,14 @@ export const allServices = [
       "Creative & Functional Layouts",
       "Cross-Device Compatibility",
     ],
+    link: "/services/uiux-development",
+    servicedescription:
+      "The design and user experience of your digital products play a significant role in how customers engage with your brand. Our UI/UX design services focus on creating designs that are not only visually stunning but also intuitive and easy to navigate. We take a user-centered approach, ensuring that each design decision enhances functionality and improves overall satisfaction. Through extensive research, wireframing, and usability testing, we create designs that increase user engagement and boost customer loyalty.",
   },
   {
+    icon: require("../assets/images/servicesimg/cloud.png"),
+    img: require("../assets/images/servicesimg/cloud.jpg"),
+    img2: require("../assets/images/servicesimg/cloud2.jpg"),
     category: "Cloud Computing Services",
     description:
       "In today’s digital landscape, flexibility and scalability are crucial for business growth. Our cloud computing services help businesses move to the cloud, manage their cloud infrastructure, and optimize their resources. Whether you’re looking for cloud migration, hybrid solutions, or better data security, we ensure your cloud environment supports your long-term goals with minimal hassle.",
@@ -564,8 +602,13 @@ export const allServices = [
       "Cost-Effective Cloud Management",
     ],
     link: "/services/cloud-computing-services",
+    servicedescription:
+      "The shift to cloud computing is helping businesses reduce costs and improve scalability. Our Cloud Computing Services provide businesses with the tools to move to the cloud securely, efficiently, and with minimal disruption. We help you leverage cloud solutions for storage, software, and infrastructure that scale as your business grows. Whether you're looking for a full cloud migration or want to optimize your existing cloud infrastructure, we offer the expertise needed to make cloud computing work for you.",
   },
   {
+    icon: require("../assets/images/servicesimg/iot.png"),
+    img: require("../assets/images/servicesimg/iot.jpg"),
+    img2: require("../assets/images/servicesimg/iot2.jpg"),
     category: "Internet of Things (IoT) Development",
     description:
       "The Internet of Things is transforming industries by connecting devices and creating intelligent, data-driven ecosystems. At HAASA AI, we develop innovative IoT solutions that help businesses collect real-time data, automate processes, and create smarter systems. Whether it's wearable tech, smart homes, or industrial IoT applications, we deliver solutions that improve efficiency and drive innovation.",
@@ -577,8 +620,14 @@ export const allServices = [
       "Automated IoT Systems",
       "Scalable IoT Solutions for Various Industries",
     ],
+    link: "/services/iot-development",
+    servicedescription:
+      "The Internet of Things (IoT) is revolutionizing industries by connecting devices and enabling real-time data exchange. Our IoT development services help you create connected systems that streamline operations, increase automation, and provide valuable insights. From smart sensors and connected devices to industrial IoT solutions, we build custom solutions that improve efficiency, enhance monitoring, and provide real-time analytics that help you make better decisions.",
   },
   {
+    icon: require("../assets/images/servicesimg/ml.png"),
+    img: require("../assets/images/servicesimg/ml.jpg"),
+    img2: require("../assets/images/servicesimg/ml2.jpg"),
     category: "Machine Learning",
     description:
       "Machine Learning is at the heart of modern innovation, and we’re here to help you leverage its power. By using advanced algorithms and data models, we create solutions that enable machines to learn from data and improve decision-making over time. Whether it's for predictive analytics, personalization, or automation, our machine learning solutions are designed to optimize performance and enhance outcomes.",
@@ -590,8 +639,14 @@ export const allServices = [
       "Personalized User Experiences",
       "Continuous Improvement with Adaptive Algorithms",
     ],
+    link: "/services/ml-development",
+    servicedescription:
+      "Machine learning enables systems to evolve and improve with experience, offering businesses new ways to automate processes and gain insights. Our Machine Learning services help you develop predictive models, automate decision-making, and optimize business processes. Whether you need machine learning models for customer segmentation, fraud detection, or recommendation systems, we provide bespoke solutions that improve operational efficiency and offer valuable insights that drive better business outcomes.",
   },
   {
+    icon: require("../assets/images/servicesimg/vrar.png"),
+    img: require("../assets/images/servicesimg/vrar.jpg"),
+    img2: require("../assets/images/servicesimg/vrar2.jpg"),
     category: "Augmented Reality (AR) & Virtual Reality (VR) Development",
     description:
       "Take user engagement to the next level with immersive AR and VR experiences. Our team specializes in creating cutting-edge augmented and virtual reality applications that captivate your audience and enhance user experiences. Whether for marketing, training, or product demonstrations, we help businesses create experiences that are interactive, engaging, and memorable.",
@@ -604,8 +659,13 @@ export const allServices = [
       "Engaging Marketing Solutions",
     ],
     link: "/services/vr-ar-development",
+    servicedescription:
+      "AR and VR technologies are transforming how businesses engage with their customers and employees. We develop immersive experiences that take advantage of the latest AR and VR technologies, whether for product demonstrations, training simulations, or virtual tours. These technologies allow your business to create interactive, engaging experiences that not only enhance customer engagement but also provide unique opportunities for marketing, training, and collaboration.",
   },
   {
+    icon: require("../assets/images/servicesimg/block.png"),
+    img: require("../assets/images/servicesimg/block.jpg"),
+    img2: require("../assets/images/servicesimg/block2.jpg"),
     category: "Blockchain Development",
     description:
       "Blockchain technology is revolutionizing how businesses manage data and transactions. Our blockchain development services focus on creating secure, transparent, and decentralized solutions that help businesses reduce risks and increase efficiency. Whether it’s smart contracts, cryptocurrency applications, or decentralized finance (DeFi) solutions, we provide scalable blockchain solutions tailored to your needs.",
@@ -617,9 +677,14 @@ export const allServices = [
       "Blockchain Integration Services",
       "Scalable dApps (Decentralized Applications)",
     ],
+    servicedescription:
+      "Blockchain technology offers secure, transparent, and decentralized systems that are changing how businesses handle data and transactions. Our Blockchain Development services help you integrate blockchain solutions into your business operations to increase security, reduce fraud, and improve transparency. Whether you're building decentralized applications (dApps), implementing smart contracts, or developing secure cryptocurrency systems, we create custom blockchain solutions that streamline processes and improve trust within your business ecosystem.",
     link: "/services/blockchain-solutions",
   },
   {
+    icon: require("../assets/images/servicesimg/game.png"),
+    img: require("../assets/images/servicesimg/game.jpg"),
+    img2: require("../assets/images/servicesimg/game2.jpg"),
     category: "Gaming Application Development",
     description:
       "The gaming industry continues to thrive, and at HAASA AI, we create engaging, high-performance gaming experiences that keep players hooked. From mobile games to console and PC platforms, our team delivers visually stunning games with smooth gameplay mechanics and interactive features. We specialize in bringing your game ideas to life, ensuring it performs seamlessly on any platform.",
@@ -631,8 +696,14 @@ export const allServices = [
       "Engaging Storylines & Gameplay Mechanics",
       "Scalable & Flexible Gaming Solutions",
     ],
+    link: "/services/game-development",
+    servicedescription:
+      "The gaming industry continues to grow rapidly, and our team is here to help you create high-quality gaming applications that engage users and provide immersive experiences. We specialize in developing games for mobile, console, and PC platforms. Whether you're developing casual games or complex, multi-player experiences, we ensure that your game is fun, interactive, and performs well across all devices. Our gaming applications are designed to captivate audiences, boost engagement, and deliver a memorable experience.",
   },
   {
+    icon: require("../assets/images/servicesimg/chatbot.png"),
+    img: require("../assets/images/servicesimg/chatbot.jpg"),
+    img2: require("../assets/images/servicesimg/chatbot2.jpg"),
     category: "Chatbot Development",
     description:
       "Enhance your customer experience with AI-powered chatbots that provide instant support, answer queries, and guide users through various processes. Our chatbot solutions help businesses automate communication, provide personalized responses, and ensure your customers receive 24/7 assistance. Whether for customer service, lead generation, or internal processes, our bots are built to scale with your business.",
@@ -644,8 +715,14 @@ export const allServices = [
       "AI-Driven Personalization",
       "Seamless Integration with Existing Systems",
     ],
+    link: "/services/chatbot-development",
+    servicedescription:
+      "As customer expectations continue to rise, businesses need to provide quick and efficient responses. Our Chatbot Development services allow you to create AI-driven bots that handle customer inquiries, provide real-time assistance, and improve engagement. Whether it's for a website, mobile app, or social media platform, we design and implement chatbots that provide personalized, intelligent interactions with customers, allowing you to offer 24/7 support while reducing operational costs.",
   },
   {
+    icon: require("../assets/images/servicesimg/aicalling.png"),
+    img: require("../assets/images/servicesimg/aicalling.jpg"),
+    img2: require("../assets/images/servicesimg/aicalling2.jpg"),
     category: "AI Calling Agency Services",
     description:
       "Revolutionize your customer service operations with AI-powered calling solutions. Our AI calling services integrate advanced voice recognition technology to handle customer inquiries, appointment reminders, and more. With 24/7 availability, personalized interactions, and efficient call management, our AI solutions ensure your customers receive quick, accurate service every time.",
@@ -657,5 +734,8 @@ export const allServices = [
       "Customer Query Handling",
       "Efficient Call Routing & Management",
     ],
+    link: "/services/ai-calling-development",
+    servicedescription:
+      "Our AI Calling Agency services use advanced voice AI technology to automate phone-based interactions, improving efficiency and reducing human resource costs. By incorporating natural language processing (NLP) and speech recognition, our AI-driven calling solutions can handle customer service tasks, schedule appointments, and answer queries, providing a seamless experience for your customers. We work with you to design automated systems that increase customer satisfaction, improve response times, and streamline operations, all while reducing the cost of customer service.",
   },
 ];

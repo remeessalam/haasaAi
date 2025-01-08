@@ -51,7 +51,10 @@ const ContactUs = () => {
             <h2 data-aos="fade-up" className="heading-2 capitalize">
               We are ready for your help
             </h2>
-            <p data-aos="fade-up" className="max-w-[35rem] lg:max-w-max">
+            <p
+              data-aos="fade-up"
+              className="max-w-[35rem] lg:max-w-max text-secondary"
+            >
               We’d love to hear from you! Whether you have a project in mind,
               need expert guidance, or want to explore how our solutions can
               benefit your business, we are just a message or phone call away.
@@ -68,7 +71,7 @@ const ContactUs = () => {
             <span className="relative z-10 group-hover:text-white font-semibold mt-4">
               Phone Number
             </span>
-            <span className="relative z-10 group-hover:text-white mt-2">
+            <span className="relative z-10 group-hover:text-white mt-2 text-secondary">
               {companyDetails.phone}
             </span>
           </div>
@@ -83,7 +86,7 @@ const ContactUs = () => {
             <span className="relative z-10 group-hover:text-white font-semibold mt-4">
               Email Address
             </span>
-            <span className="relative z-10 group-hover:text-white mt-2">
+            <span className="relative z-10 group-hover:text-white mt-2 text-secondary">
               {companyDetails.email}
             </span>
           </div>
@@ -98,7 +101,7 @@ const ContactUs = () => {
             <span className="relative z-10 group-hover:text-white font-semibold mt-4">
               Location
             </span>
-            <span className="relative z-10 group-hover:text-white mt-2">
+            <span className="relative z-10 group-hover:text-white mt-2 text-secondary">
               {companyDetails.location}
             </span>
           </div>
