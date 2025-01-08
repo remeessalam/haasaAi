@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import bannerImg from "../../assets/images/landingpages/banner-bg.webp";
+import bannerImg from "../../assets/images/landingpages/banner-bg.jpg";
 import { Link } from "react-router-dom";
 import robot from "../../assets/images/landingpages/ai-robot.png";
 import gsap from "gsap";
@@ -22,9 +22,10 @@ const Banner = () => {
   return (
     <div
       id="banner"
-      className="min-h-screen w-full relative flex justify-center bg-cover bg-center bg-no-repeat"
+      className="relative min-h-screen w-full  flex justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
+      <div className="absolute top-0 left-0 w-full h-full bg-black/20" />
       <div className="wrapper pt-[10rem] pb-[5rem] flex flex-col-reverse lg:grid grid-cols-[60%_40%] items-center gap-5">
         <div className="flex flex-col gap-4 items-start justify-center">
           <p
@@ -35,11 +36,14 @@ const Banner = () => {
           </p>
           <h1
             data-aos="fade-right"
-            className="text-[2.5rem] md:text-5xl font-bold leading-tight"
+            className="text-[2.5rem] md:text-5xl font-bold leading-tight !text-white drop-shadow-2xl"
           >
             Welcome to HAASA AI – Shaping the Future of Innovation{" "}
           </h1>
-          <p data-aos="fade-right" className="text-sm text-gray-500">
+          <p
+            data-aos="fade-right"
+            className="text-base text-white drop-shadow-2xl"
+          >
             At HAASA AI, we pride ourselves on being at the forefront of
             technological innovation. Our dedicated team is focused on
             delivering comprehensive solutions that help businesses evolve and

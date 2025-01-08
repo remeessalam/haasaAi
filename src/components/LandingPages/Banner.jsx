@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import bannerImg from "../../assets/images/landingpages/banner-bg.webp";
+import bannerImg from "../../assets/images/landingpages/banner-bg.jpg";
 import { Link } from "react-router-dom";
 import robot from "../../assets/images/landingpages/ai-robot.png";
 import gsap from "gsap";

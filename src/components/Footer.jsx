@@ -16,8 +16,8 @@ import { allServices, companyDetails } from "../data/constant";
 const Footer = () => {
   return (
     <div
-      className="border-t-2 py-[2rem] bg-cover bg-top"
-      style={{ backgroundImage: `url(${bg})` }}
+      className="border-t-2 py-[2rem] bg-cover bg-top bg-[#bfbfbf]"
+      // style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="wrapper grid grid-cols-1 md:grid-cols-4 lg:grid-cols-[50%_50%] gap-6">
         <div className="w-fit md:col-span-4 lg:col-span-1 md:place-self-center lg:place-self-auto">
@@ -37,8 +37,10 @@ const Footer = () => {
         </div> */}
         <div className="md:col-span-2 lg:col-span-1 flex flex-col lg:items-end gap-4">
           <div className="flex flex-col gap-5">
-            <h6 className="text-lg font-medium text-start">Contact Info</h6>
-            <ul className="flex flex-col gap-6 text-md">
+            <h6 className="text-lg font-medium text-start text-black">
+              Contact Info
+            </h6>
+            <ul className="flex flex-col gap-6 text-md text-black">
               <li className="flex gap-2 items-center">
                 <img
                   loading="lazy"
@@ -47,7 +49,7 @@ const Footer = () => {
                   className="w-[1.5rem] object-contain grayscale"
                 />
                 <a href={`mailto:${companyDetails.email}`}>
-                  <span className="font-medium">Email:</span>{" "}
+                  <span className="font-medium ">Email:</span>{" "}
                   {companyDetails.email}
                 </a>
               </li>

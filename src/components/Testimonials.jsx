@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import testiImg from "../assets/images/testimonials/testimonials-bg.png";
+import testiImg from "../assets/images/testimonials/testimonials-bg.jpg";
 import line from "../assets/images/line.png";
 import users from "../assets/images/users-grp.png";
 import { testimonials } from "../data/constant";
@@ -39,7 +39,7 @@ const Testimonials = () => {
           <h2 className="text-[2rem] md:text-4xl capitalize font-semibold mb-5 text-center lg:text-start lg:max-w-[30rem]">
             Clients Feedback Examples You
           </h2>
-          <p className="text-gray-600 text-sm mb-5 max-w-[30rem] text-center lg:text-start">
+          <p className="text-black drop-shadow-2xl text-sm mb-5 max-w-[30rem] text-center lg:text-start">
             At HAASA AI, we take pride in the success of our clients. Here's
             what some of them have to say about their experience working with
             us:
@@ -70,7 +70,9 @@ const Testimonials = () => {
                 alt=""
               />
               <div className="sm:pl-[5rem] sm:pr-[3rem] pt-[3rem] sm:pt-0 flex flex-col gap-3">
-                <p className="text-sm text-wrap">{item.review}</p>
+                <p className="text-sm text-wrap text-secondary">
+                  {item.review}
+                </p>
                 <h5 className="text-[1.25rem] sm:text-3xl text-center sm:text-start">
                   - {item.name}
                 </h5>

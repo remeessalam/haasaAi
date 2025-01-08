@@ -14,6 +14,13 @@ import process3 from "../../assets/images/w-process3.png";
 import arrow from "../../assets/images/icons/Arrow.png";
 import SolveITNeeds from "../../components/Website/SolveITNeeds";
 import Footer from "../../components/Footer";
+import {
+  FaCheckCircle,
+  FaPencilRuler,
+  FaRegLightbulb,
+  FaRocket,
+  FaSearch,
+} from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -159,20 +166,21 @@ const AboutUs = () => {
             <h6 className="font-medium text-secondary">Work Process</h6>
           </div>
           <h2 className="heading mt-2">Our Work Process</h2>
-          <div className="grid lg:grid-cols-3 mt-10 gap-6 lg:gap-10">
+          <div className="grid lg:grid-cols-3 mt-10 gap-6 lg:gap-10 ">
             <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
-              <img
+              {/* <img
                 loading="lazy"
                 src={process1}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
                 width="100"
                 height="100"
-              />
+              /> */}
+              <FaSearch className="w-[3rem] sm:w-[5rem] h-[2.5rem] object-contain text-black" />
               <h5 className="text-xl font-semibold">
                 Discovery & Consultation
               </h5>
-              <p className="px-6 text-sm">
+              <p className="px-6 text-sm text-black">
                 We start by gaining a deep understanding of your business,
                 challenges, and goals, ensuring we provide the most effective
                 solution.
@@ -185,14 +193,15 @@ const AboutUs = () => {
               />
             </div>
             <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
-              <img
+              {/* <img
                 loading="lazy"
                 src={process2}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
                 width="100"
                 height="100"
-              />
+              /> */}
+              <FaRegLightbulb className="w-[3rem] sm:w-[5rem] h-[2.5rem] object-contain text-black" />
               <h5 className="text-xl font-semibold">Planning & Strategy</h5>
               <p className="px-6 text-sm">
                 After understanding your needs, we develop a detailed strategy,
@@ -206,14 +215,15 @@ const AboutUs = () => {
               />
             </div>
             <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
-              <img
+              {/* <img
                 loading="lazy"
                 src={process3}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
                 width="100"
                 height="100"
-              />
+              /> */}
+              <FaPencilRuler className="w-[3rem] sm:w-[5rem] h-[2.5rem] object-contain text-black" />
               <h5 className="text-xl font-semibold">Design & Development</h5>
               <p className="px-6 text-sm">
                 We get to work on crafting a solution that meets your
@@ -230,14 +240,15 @@ const AboutUs = () => {
           </div>
           <div className="grid lg:grid-cols-2 mt-10 gap-6 lg:gap-10">
             <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
-              <img
+              {/* <img
                 loading="lazy"
                 src={process1}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
                 width="100"
                 height="100"
-              />
+              /> */}
+              <FaCheckCircle className="w-[3rem] sm:w-[5rem] h-[2.5rem] object-contain text-black" />
               <h5 className="text-xl font-semibold">
                 Testing & Quality Assurance
               </h5>
@@ -253,14 +264,15 @@ const AboutUs = () => {
               />
             </div>
             <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
-              <img
+              {/* <img
                 loading="lazy"
                 src={process2}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
                 width="100"
                 height="100"
-              />
+              /> */}
+              <FaRocket className="w-[3rem] sm:w-[5rem] h-[2.5rem] object-contain text-black" />
               <h5 className="text-xl font-semibold">Deployment & Support</h5>
               <p className="px-6 text-sm">
                 We ensure a smooth deployment and provide ongoing support to

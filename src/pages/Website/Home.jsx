@@ -114,7 +114,10 @@ const Home = () => {
               <h1 data-aos="fade-up" className="heading text-center">
                 We Provide the Best IT Solution Services
               </h1>
-              <p data-aos="fade-up" className="text-center max-w-2xl">
+              <p
+                data-aos="fade-up"
+                className="text-center max-w-2xl text-black"
+              >
                 At HAASA AI, we offer a full range of advanced technology
                 services designed to empower businesses with scalable,
                 intelligent, and secure solutions.
@@ -138,7 +141,10 @@ const Home = () => {
               <h2 data-aos="fade-up" className="heading text-center">
                 Industries We Serve
               </h2>
-              <p data-aos="fade-up" className="mt-2 text-center mb-3">
+              <p
+                data-aos="fade-up"
+                className="mt-2 text-center mb-3 text-black"
+              >
                 We cater to a wide range of industries, delivering tailored AI
                 and tech solutions to meet specific needs:
               </p>
@@ -206,7 +212,7 @@ const Home = () => {
                     Our Vision: Empowering Businesses to Adapt, Innovate, and
                     Thrive Through Technology
                   </h2>
-                  <p>
+                  <p className="text-black">
                     Our vision is to be the trusted partner that businesses turn
                     to when they need to adapt, innovate, and excel. We believe
                     that technology should not be a barrier but a catalyst for
