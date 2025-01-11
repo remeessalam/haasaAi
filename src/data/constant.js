@@ -58,7 +58,7 @@ export const companyDetails = {
   phone: "+91-9866525099",
   location:
     "8-2-269/S/88 & 8-2-2, SAGAR COORPERATIVE SOCIETY, HYDERABAD, TELANGANA",
-  email: "abc@xyz.com",
+  email: "info@haasa.ai",
 };
 
 export const landingPageNavLinks = [
